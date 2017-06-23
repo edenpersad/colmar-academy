@@ -1,0 +1,56 @@
+html {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+div, nav, section, header {
+  border: 1px solid black;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.main-content {
+  padding-top: 6rem;
+}
+
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 1.5rem;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+
+
+
+
+/* Splash */
