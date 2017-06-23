@@ -1,19 +1,40 @@
 html {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-div, nav, section, header {
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+div,
+nav,
+section,
+header {
   border: 1px solid black;
 }
 
 section {
   display: flex;
-  padding: 2rem 1.5rem;
 }
 
 strong {
@@ -62,6 +83,7 @@ nav li {
 
 #banner {
   align-items: center;
+  padding: 2rem 1.5rem;
 }
 
 #banner .image-container {
@@ -86,31 +108,85 @@ nav li {
 
 /* Information */
 
-#information {
-  justify-content: space-between;
-  padding-right: 0;
+
+#information .main {
+  padding: 2rem 1.5rem;
 }
 
-#information .information-main {
-  padding-right: 1.5rem;
+#information .main .content {
+  padding-right: 1rem;
 }
 
-#information .information-column {
+#information .main h1{
+  padding: 2rem 0 1.5rem 0;
+}
+
+#information .main p{
+  padding-bottom: 2.5rem;
+}
+
+#information .column {
   display: block;
   min-width: 423px;
   max-width: 423px;
 }
 
-.information-item {
+#information .item {
   display: flex;
   align-items: center;
   padding: 1rem;
 }
+ #information .item:first-of-type {
+   padding-top: 2rem;
+ }
 
-.information-item .image-container {
-  width: 35%;
+ #information .item:last-of-type {
+   background-color: lightgrey;
+ }
+
+#information .item .image-container {
+  max-width: 35%;
+  min-width: 35%;
+  height: auto;
 }
 
-.information-item .content {
+#information .item .content {
   padding-left: 1rem;
+}
+
+#information .item h3, .item p {
+  padding-bottom: 0.5rem;
+}
+
+/* Courses */
+
+#courses {
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  background-color: lightgrey;
+}
+
+#courses h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#courses .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#courses .item {
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  max-width: 30%;
+  margin: 0 1rem 1rem 1rem;
+  background-color: #fff;
+}
+
+#courses .content {
+  padding: 1rem 1rem 2rem 1rem;
 }
