@@ -11,14 +11,22 @@ div, nav, section, header {
   border: 1px solid black;
 }
 
+section {
+  padding: 2rem 1.5rem;
+}
+
 strong {
   font-weight: 600;
 }
 
 .main-content {
-  padding-top: 6rem;
+  padding-top: 4rem; /* offset header */
 }
 
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
 
 /* Header */
 
@@ -49,8 +57,29 @@ nav li {
   padding-left: 1rem;
 }
 
+/* Banner */
 
+#banner {
+  display: flex;
+  align-items: center;
+}
 
+#banner .image-container {
+  width: 60%;
+  height: auto;
+}
 
+#banner .content {
+  padding-left: 2.5rem;
+}
 
-/* Splash */
+#banner h1, #banner p {
+  padding-bottom: 1.5rem;
+}
+
+#banner .button {
+  text-align: center;
+  background-color: gray;
+  vertical-align: middle;
+  padding: 0.5rem;
+}
