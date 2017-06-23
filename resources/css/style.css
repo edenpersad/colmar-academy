@@ -12,6 +12,7 @@ div, nav, section, header {
 }
 
 section {
+  display: flex;
   padding: 2rem 1.5rem;
 }
 
@@ -60,7 +61,6 @@ nav li {
 /* Banner */
 
 #banner {
-  display: flex;
   align-items: center;
 }
 
@@ -82,4 +82,35 @@ nav li {
   background-color: gray;
   vertical-align: middle;
   padding: 0.5rem;
+}
+
+/* Information */
+
+#information {
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+#information .information-main {
+  padding-right: 1.5rem;
+}
+
+#information .information-column {
+  display: block;
+  min-width: 423px;
+  max-width: 423px;
+}
+
+.information-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.information-item .image-container {
+  width: 35%;
+}
+
+.information-item .content {
+  padding-left: 1rem;
 }
