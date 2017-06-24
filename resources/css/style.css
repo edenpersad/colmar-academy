@@ -136,6 +136,7 @@ nav li {
   align-items: center;
   padding: 1rem;
 }
+
  #information .item:first-of-type {
    padding-top: 2rem;
  }
@@ -181,7 +182,6 @@ nav li {
 #courses .item {
   display: flex;
   flex-direction: column;
-  min-height: 220px;
   max-width: 30%;
   margin: 0 1rem 1rem 1rem;
   background-color: #fff;
@@ -189,4 +189,54 @@ nav li {
 
 #courses .content {
   padding: 1rem 1rem 2rem 1rem;
+}
+
+#courses .content h3 {
+  padding: 1rem 0 0.5rem 0;
+}
+
+#courses .content p {
+  padding-bottom: 0.5rem;
+  border: 1px solid black;
+}
+
+/* Thesis */
+
+#thesis {
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+#thesis h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+#thesis .main {
+  display: flex;
+}
+
+#thesis .video {
+  display: block;
+  flex-direction: column;
+  padding-right: 1rem;
+}
+
+#thesis .column {
+  display: block;
+  min-width: 423px;
+  max-width: 423px;
+}
+
+#thesis .item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+#thesis .item .image-container {
+  max-width: 35%;
+  min-width: 35%;
+  height: auto;
 }
