@@ -29,12 +29,9 @@ h3 {
 div,
 nav,
 section,
-header {
+header,
+footer {
   border: 1px solid black;
-}
-
-section {
-  display: flex;
 }
 
 strong {
@@ -48,6 +45,17 @@ strong {
 .image-container img {
   display: block;
   max-width: 100%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 760px) {
+  section {
+    flex-direction: column;
+  }
 }
 
 /* Header */
@@ -79,6 +87,33 @@ nav li {
   padding-left: 1rem;
 }
 
+header #mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header #desktop {
+    display: none;
+  }
+
+  header #mobile {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1.5rem;
+  }
+
+  header #mobile nav {
+    width: 100%;
+  }
+
+  header #mobile ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 /* Banner */
 
 #banner {
@@ -95,7 +130,7 @@ nav li {
   padding-left: 2.5rem;
 }
 
-#banner h1, #banner p {
+#banner h1, #banner h2 {
   padding-bottom: 1.5rem;
 }
 
@@ -104,7 +139,20 @@ nav li {
   background-color: gray;
   vertical-align: middle;
   padding: 0.5rem;
+  width: 80%;
 }
+
+@media only screen and (max-width: 760px) {
+  #banner {
+    align-items: center;
+    padding: 0;
+  }
+
+  #banner .image-container {
+    width: 100%;
+    height: auto;
+  }
+  }
 
 /* Information */
 
@@ -183,6 +231,7 @@ nav li {
   display: flex;
   flex-direction: column;
   max-width: 30%;
+  min-width: 25%;
   margin: 0 1rem 1rem 1rem;
   background-color: #fff;
 }
@@ -223,6 +272,14 @@ nav li {
   padding-right: 1rem;
 }
 
+#thesis .video  h2 {
+  padding: 1.5rem 0;
+}
+
+#thesis .video p {
+  padding-bottom: 2rem;
+}
+
 #thesis .column {
   display: block;
   min-width: 423px;
@@ -232,11 +289,29 @@ nav li {
 #thesis .item {
   display: flex;
   align-items: center;
+  height: 168px;
   padding: 1rem;
+}
+
+#thesis .item:first-of-type {
+  background-color: lightgrey;
 }
 
 #thesis .item .image-container {
   max-width: 35%;
   min-width: 35%;
   height: auto;
+}
+
+/* Footer */
+
+footer .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+footer nav ul li {
+  display: inline;
 }
