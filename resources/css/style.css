@@ -1,3 +1,5 @@
+/* Universal */
+
 html {
   box-sizing: border-box;
 }
@@ -302,11 +304,11 @@ header .mobile {
   border: 1px solid black;
 }
 
-@media only screen and (max-width: 760px) {
+#courses .mobile {
+  display: none;
+}
 
-  #courses {
-    background-color: #fff;
-  }
+@media only screen and (max-width: 760px) {
 
   #courses .grid.desktop {
     display: none;
@@ -321,17 +323,47 @@ header .mobile {
   #courses {
     padding: 1rem 0.5rem;
     background-color: lightgrey;
+    background-color: #fff;
   }
 
   #courses .item {
     display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     max-width: 100%;
     min-width: 0;
     margin: 0 0 0.5rem 0;
     padding: 1rem;
+    color: #fff;
+    text-align: center;
   }
 
 
+  #software {
+    background-image: url("../images/course-software.jpg");
+
+  }
+
+  #computer {
+    background-image: url("../images/course-computer-art.jpg");
+  }
+
+  #design {
+    background-image: url("../images/course-design.jpg");
+  }
+
+  #data {
+    background-image: url("../images/course-data.jpg");
+  }
+
+  #business {
+    background-image: url("../images/course-business.jpg");
+  }
+
+  #marketing {
+    background-image: url("../images/course-marketing.jpg");
+  }
 }
 
 /* Thesis */
@@ -353,7 +385,6 @@ header .mobile {
 
 #thesis .video {
   display: block;
-  flex-direction: column;
   padding-right: 1rem;
 }
 
@@ -386,6 +417,20 @@ header .mobile {
   max-width: 35%;
   min-width: 35%;
   height: auto;
+}
+
+@media only screen and (max-width: 760px) {
+  #thesis .desktop {
+    display: none;
+  }
+
+  #thesis {
+    padding: 2rem 0;
+  }
+
+  #thesis .video {
+    padding-right: 0;
+  }
 }
 
 /* Footer */
