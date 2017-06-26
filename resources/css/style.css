@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
-  color: #222222;
+  color: #464E54;
 }
 
 h1 {
@@ -29,6 +29,11 @@ h3 {
   font-weight: 600;
 }
 
+.invert {
+ color: #fafafa;
+}
+
+
 strong {
   font-weight: 600;
 }
@@ -40,8 +45,9 @@ a {
 }
 
 a:hover {
-  color: #222222;
+  color: #ff3333;
 }
+
 
 .main-content {
   padding-top: 4rem; /* offset header */
@@ -69,6 +75,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
 }
 
 header .content {
@@ -89,7 +96,7 @@ header nav ul {
   display: flex;
 }
 
-nav li {
+.desktop nav li {
   padding-left: 1rem;
 }
 
@@ -125,7 +132,7 @@ header .mobile {
 #banner {
   align-items: center;
   padding: 2rem 1.5rem;
-  background-color: #f7f7f7;
+  background-color: #464E54;
 }
 
 #banner .image-container {
@@ -144,11 +151,17 @@ header .mobile {
 #banner .button {
   text-align: center;
   color: #fafafa;
-  background-color: #222222;
+  background-color:#ff3333;
   vertical-align: middle;
   padding: 0.5rem;
   width: 80%;
   border-radius: 1px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#banner .button:hover {
+  /*color: #444;*/
+  background-color: #cc3333;
 }
 
 @media only screen and (max-width: 760px) {
@@ -208,7 +221,7 @@ header .mobile {
  }
 
  #information .item:last-of-type {
-   background-color: lightgrey;
+   background-color: #f4f4f4;
  }
 
 #information .item .image-container {
@@ -275,7 +288,7 @@ header .mobile {
   align-items: center;
   flex-direction: column;
   padding: 2rem 1.5rem;
-  background-color: #f7f7f7;
+  background-color: #464E54;
 }
 
 #courses h1 {
@@ -293,9 +306,9 @@ header .mobile {
   display: flex;
   flex-direction: column;
   max-width: 30%;
-  min-width: 25%;
   margin: 0 1rem 1rem 1rem;
   background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
 }
 
 #courses .content {
@@ -314,6 +327,12 @@ header .mobile {
   display: none;
 }
 
+@media only screen and (max-width: 1000px) {
+  #courses .item {
+    max-width: 45%;
+  }
+}
+
 @media only screen and (max-width: 760px) {
 
   #courses .grid.desktop {
@@ -328,8 +347,7 @@ header .mobile {
 
   #courses {
     padding: 1rem 0.5rem;
-    background-color: lightgrey;
-    background-color: #fff;
+    background-color: #464E54;
   }
 
   #courses .item {
@@ -451,10 +469,13 @@ footer .content {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+  color: #999999;
+  background-color: #f0efeb;
 }
 
 footer nav ul li {
   display: inline;
+  padding-right: 1.5rem;
 }
 
 @media only screen and (max-width: 760px) {
