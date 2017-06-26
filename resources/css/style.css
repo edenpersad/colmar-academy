@@ -87,27 +87,27 @@ nav li {
   padding-left: 1rem;
 }
 
-header #mobile {
+header .mobile {
   display: none;
 }
 
 @media only screen and (max-width: 760px) {
-  header #desktop {
+  header .desktop {
     display: none;
   }
 
-  header #mobile {
+  header .mobile {
     display: flex;
     align-items: center;
     height: 4rem;
     padding: 0 1.5rem;
   }
 
-  header #mobile nav {
+  header .mobile nav {
     width: 100%;
   }
 
-  header #mobile ul {
+  header .mobile ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,7 +131,7 @@ header #mobile {
 }
 
 #banner h1, #banner h2 {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 #banner .button {
@@ -144,6 +144,7 @@ header #mobile {
 
 @media only screen and (max-width: 760px) {
   #banner {
+    flex-direction: column;
     align-items: center;
     padding: 0;
   }
@@ -152,7 +153,15 @@ header #mobile {
     width: 100%;
     height: auto;
   }
+
+  #banner .content {
+    padding: 2rem 1rem;
   }
+
+  #banner .button {
+    width: 100%;
+  }
+}
 
 /* Information */
 
@@ -207,6 +216,50 @@ header #mobile {
   padding-bottom: 0.5rem;
 }
 
+#information .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+
+  #information .desktop {
+    display: none;
+  }
+
+  #information .column {
+    display: block;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  #information .item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #information .mobile.image-container {
+    display: block;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  #information .item h3, .item p {
+    padding-bottom: 0.25rem;
+  }
+
+  #information .item:first-of-type {
+    padding-top: 1rem;
+  }
+
+  #information .item:last-of-type {
+    background-color: #fff;
+  }
+}
+
 /* Courses */
 
 #courses {
@@ -247,6 +300,38 @@ header #mobile {
 #courses .content p {
   padding-bottom: 0.5rem;
   border: 1px solid black;
+}
+
+@media only screen and (max-width: 760px) {
+
+  #courses {
+    background-color: #fff;
+  }
+
+  #courses .grid.desktop {
+    display: none;
+  }
+
+  #courses .grid.mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #courses {
+    padding: 1rem 0.5rem;
+    background-color: lightgrey;
+  }
+
+  #courses .item {
+    display: flex;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 0 0.5rem 0;
+    padding: 1rem;
+  }
+
+
 }
 
 /* Thesis */
