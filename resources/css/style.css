@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
+  color: #222222;
 }
 
 h1 {
@@ -28,16 +29,18 @@ h3 {
   font-weight: 600;
 }
 
-div,
-nav,
-section,
-header,
-footer {
-  border: 1px solid black;
-}
-
 strong {
   font-weight: 600;
+}
+
+a {
+  color: #999999;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #222222;
 }
 
 .main-content {
@@ -65,7 +68,7 @@ section {
 header {
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 header .content {
@@ -79,6 +82,7 @@ header .content {
 header .logo {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -121,6 +125,7 @@ header .mobile {
 #banner {
   align-items: center;
   padding: 2rem 1.5rem;
+  background-color: #f7f7f7;
 }
 
 #banner .image-container {
@@ -138,16 +143,18 @@ header .mobile {
 
 #banner .button {
   text-align: center;
-  background-color: gray;
+  color: #fafafa;
+  background-color: #222222;
   vertical-align: middle;
   padding: 0.5rem;
   width: 80%;
+  border-radius: 1px;
 }
 
 @media only screen and (max-width: 760px) {
   #banner {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
 
@@ -236,7 +243,7 @@ header .mobile {
 
   #information .item {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     width: 100%;
     padding: 1rem;
   }
@@ -268,7 +275,7 @@ header .mobile {
   align-items: center;
   flex-direction: column;
   padding: 2rem 1.5rem;
-  background-color: lightgrey;
+  background-color: #f7f7f7;
 }
 
 #courses h1 {
@@ -301,7 +308,6 @@ header .mobile {
 
 #courses .content p {
   padding-bottom: 0.5rem;
-  border: 1px solid black;
 }
 
 #courses .mobile {
@@ -409,6 +415,10 @@ header .mobile {
   padding: 1rem;
 }
 
+#thesis .item .content {
+  padding-left: 1rem;
+}
+
 #thesis .item:first-of-type {
   background-color: lightgrey;
 }
@@ -439,9 +449,20 @@ footer .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5rem;
 }
 
 footer nav ul li {
   display: inline;
+}
+
+@media only screen and (max-width: 760px) {
+  footer .content .desktop {
+    display: none;
+  }
+
+  footer .content {
+    padding: 1rem;
+  }
 }
