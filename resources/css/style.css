@@ -278,7 +278,7 @@ header .mobile {
   }
 
   #information .item:last-of-type {
-    background-color: #fff;
+    background-color: #f4f4f4;
   }
 }
 
@@ -347,7 +347,6 @@ header .mobile {
 
   #courses {
     padding: 1rem 0.5rem;
-    background-color: #464E54;
   }
 
   #courses .item {
@@ -359,7 +358,6 @@ header .mobile {
     min-width: 0;
     margin: 0 0 0.5rem 0;
     padding: 1rem;
-    color: #fff;
     text-align: center;
   }
 
@@ -438,7 +436,7 @@ header .mobile {
 }
 
 #thesis .item:first-of-type {
-  background-color: lightgrey;
+  background-color: #f4f4f4;
 }
 
 #thesis .item .image-container {
@@ -469,6 +467,7 @@ footer .content {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+  font-size: 0.75rem;
   color: #999999;
   background-color: #f0efeb;
 }
