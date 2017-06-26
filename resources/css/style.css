@@ -306,7 +306,7 @@ header .mobile {
   display: flex;
   flex-direction: column;
   max-width: 30%;
-  margin: 0 1rem 1rem 1rem;
+  margin: 0 1rem 2rem 1rem;
   background-color: #fff;
   box-shadow: 0 1px 2px rgba(0,0,0,0.07);
 }
@@ -356,7 +356,7 @@ header .mobile {
     background-repeat: no-repeat;
     max-width: 100%;
     min-width: 0;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 1rem 0;
     padding: 1rem;
     text-align: center;
   }
