@@ -310,11 +310,17 @@ header .mobile {
   margin: 0 1rem 2rem 1rem;
   background-color: #fff;
   box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+  transition: outline 0.4s ease;
+}
+
+#courses .item:hover {
+  outline: 1px solid #ff3333;
 }
 
 #courses .content {
   padding: 1rem 1rem 2rem 1rem;
 }
+
 
 #courses .content h3 {
   padding: 1rem 0 0.5rem 0;
