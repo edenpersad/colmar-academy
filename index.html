@@ -21,11 +21,11 @@
   <header>
     <div class="content desktop">
       <div class="logo">
-        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy">
+        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
         <span><strong>Colmar</strong>Academy</span>
       </div>
       <nav>
-        <ul>
+        <ul role="presentation">
           <li><a href="#">On campus</a></li>
           <li><a href="#">Online</a></li>
           <li><a href="#">For companies</a></li>
@@ -38,7 +38,7 @@
 
     <div class="content mobile">
       <nav>
-        <ul>
+        <ul role="presentation">
           <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="Colamr Academy"></a></li>
           <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On Campus"></a></li>
           <li><a href="#"><img src="./resources/images/ic-online.svg" alt="Online"></a></li>
@@ -51,7 +51,7 @@
 
   <!-- Main Content -->
 
-  <div class="main-content">
+  <main>
 
   <!-- Banner -->
 
@@ -60,10 +60,12 @@
         <img src="./resources/images/banner.jpg" alt="Banner">
       </div>
       <div class="content">
-        <h1 class="invert">Learn something new everyday</h1>
-        <h2 class="invert">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <hgroup>
+          <h1 class="invert">Learn something new everyday</h1>
+          <h2 class="invert">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        </hgroup>
         <a href="#">
-          <div class="button">
+          <div class="button" role="button">
             <span>Start here</span>
           </div>
         </a>
@@ -257,7 +259,7 @@
       </div>
     </section>
 
-  </div>
+  </main>
 
     <!-- Footer -->
 
@@ -265,7 +267,7 @@
       <div class="content">
         <p>&copy; Colmar Academy. All rights reserved</p>
         <nav class="desktop">
-          <ul>
+          <ul role="presentation">
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy</a></li>
           </ul>
